@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Phc-3d-bFm">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Popup View Controller-->
+        <scene sceneID="OhC-Ff-MAq">
+            <objects>
+                <viewController storyboardIdentifier="popupVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Phc-3d-bFm" customClass="PopupViewController" customModule="Popup_Layout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pkf-Nl-QGR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMY-sV-Hha">
+                                <rect key="frame" x="65.666666666666686" y="176.00000000000003" width="283" height="310.66666666666674"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5.png" translatesAutoresizingMaskIntoConstraints="NO" id="7z1-8l-XzO">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="283" id="2uI-8o-C5F"/>
+                                            <constraint firstAttribute="height" constant="130" id="Q2R-nx-reK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환상의 나라로 초대합니다.                      초대에 응하시겠습니까?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bub-7x-Aor">
+                                        <rect key="frame" x="20" y="150" width="243" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="onH-vZ-6P1">
+                                        <rect key="frame" x="20" y="210.66666666666669" width="243" height="30"/>
+                                        <color key="backgroundColor" red="0.99083301359999998" green="1" blue="0.62516242720000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mf-XY-uHa">
+                                        <rect key="frame" x="20" y="260.66666666666669" width="120" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.48494160739999997" blue="0.97931163499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1P-Vf-hVY">
+                                        <rect key="frame" x="143" y="260.66666666666669" width="120" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.63701717069999997" blue="0.22296334670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="닫기"/>
+                                        <connections>
+                                            <action selector="closePopupAction:" destination="Phc-3d-bFm" eventType="touchUpInside" id="icr-fX-4me"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balloon_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="7k7-Ut-ZcC">
+                                        <rect key="frame" x="106.33333333333331" y="-50" width="70" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Pxn-MU-FIY"/>
+                                            <constraint firstAttribute="width" constant="70" id="xde-4d-Vk1"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7z1-8l-XzO" secondAttribute="trailing" id="0hg-RE-4PU"/>
+                                    <constraint firstAttribute="bottom" secondItem="T1P-Vf-hVY" secondAttribute="bottom" constant="20" id="5t5-Ge-zKO"/>
+                                    <constraint firstItem="7k7-Ut-ZcC" firstAttribute="centerX" secondItem="bMY-sV-Hha" secondAttribute="centerX" id="7WQ-WS-hoV"/>
+                                    <constraint firstItem="7mf-XY-uHa" firstAttribute="leading" secondItem="bMY-sV-Hha" secondAttribute="leading" constant="20" id="7hf-Pu-CNx"/>
+                                    <constraint firstItem="7z1-8l-XzO" firstAttribute="leading" secondItem="bMY-sV-Hha" secondAttribute="leading" id="8wy-1J-lkl"/>
+                                    <constraint firstAttribute="bottom" secondItem="7mf-XY-uHa" secondAttribute="bottom" constant="20" id="BFI-2A-6Ai"/>
+                                    <constraint firstItem="7mf-XY-uHa" firstAttribute="top" secondItem="onH-vZ-6P1" secondAttribute="bottom" constant="20" id="Dt4-d5-swL"/>
+                                    <constraint firstItem="T1P-Vf-hVY" firstAttribute="leading" secondItem="7mf-XY-uHa" secondAttribute="trailing" constant="3" id="TBE-L7-IIv"/>
+                                    <constraint firstItem="Bub-7x-Aor" firstAttribute="leading" secondItem="bMY-sV-Hha" secondAttribute="leading" constant="20" id="TuT-fm-PZl"/>
+                                    <constraint firstItem="7mf-XY-uHa" firstAttribute="height" secondItem="T1P-Vf-hVY" secondAttribute="height" id="aRC-yr-EO0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bub-7x-Aor" secondAttribute="trailing" constant="20" id="ajE-01-qMe"/>
+                                    <constraint firstAttribute="trailing" secondItem="onH-vZ-6P1" secondAttribute="trailing" constant="20" id="bGH-6Q-qkh"/>
+                                    <constraint firstAttribute="trailing" secondItem="T1P-Vf-hVY" secondAttribute="trailing" constant="20" id="d8g-oJ-AVf"/>
+                                    <constraint firstItem="7z1-8l-XzO" firstAttribute="top" secondItem="bMY-sV-Hha" secondAttribute="top" id="h4O-LC-UCa"/>
+                                    <constraint firstItem="7mf-XY-uHa" firstAttribute="width" secondItem="T1P-Vf-hVY" secondAttribute="width" id="hZv-Rk-as8"/>
+                                    <constraint firstItem="Bub-7x-Aor" firstAttribute="top" secondItem="7z1-8l-XzO" secondAttribute="bottom" constant="20" id="oC2-y0-QnS"/>
+                                    <constraint firstItem="onH-vZ-6P1" firstAttribute="leading" secondItem="bMY-sV-Hha" secondAttribute="leading" constant="20" id="s8V-c2-Xfz"/>
+                                    <constraint firstItem="7k7-Ut-ZcC" firstAttribute="centerY" secondItem="bMY-sV-Hha" secondAttribute="top" id="whd-lv-Nle"/>
+                                    <constraint firstItem="onH-vZ-6P1" firstAttribute="top" secondItem="Bub-7x-Aor" secondAttribute="bottom" constant="20" id="xOQ-uE-K0Z"/>
+                                    <constraint firstItem="T1P-Vf-hVY" firstAttribute="centerY" secondItem="7mf-XY-uHa" secondAttribute="centerY" id="yzt-Mv-899"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKL-g7-kNx">
+                                <rect key="frame" x="323.66666666666669" y="151" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EEd-VG-wqx"/>
+                                    <constraint firstAttribute="width" constant="50" id="lJm-3A-e9Q"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="done_check_icon.png"/>
+                                <connections>
+                                    <action selector="doneButtonAction:" destination="Phc-3d-bFm" eventType="touchUpInside" id="IWe-my-ruI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <constraints>
+                            <constraint firstItem="bMY-sV-Hha" firstAttribute="centerX" secondItem="pkf-Nl-QGR" secondAttribute="centerX" id="7wi-Pg-Hcr"/>
+                            <constraint firstItem="bMY-sV-Hha" firstAttribute="centerY" secondItem="pkf-Nl-QGR" secondAttribute="centerY" multiplier="0.9" id="DVa-pg-FY2"/>
+                            <constraint firstItem="CKL-g7-kNx" firstAttribute="centerX" secondItem="bMY-sV-Hha" secondAttribute="trailing" id="eq6-Z2-sLU"/>
+                            <constraint firstItem="CKL-g7-kNx" firstAttribute="centerY" secondItem="bMY-sV-Hha" secondAttribute="top" id="gwi-SG-CmW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4S7-7J-nCl"/>
+                    </view>
+                    <connections>
+                        <outlet property="outputTextField" destination="onH-vZ-6P1" id="jTt-sa-mQN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yEq-E6-lEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Identity Inspector에 있는 Story Board ID로 세그웨이 연결할 수 있음." textAlignment="natural" id="e5Y-Be-AeK">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="zhU-0j-We8">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="326.33333333333331"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">오브젝트가 View밖에 살짝 걸쳐있으면, 그 객체는 마우스로 클릭하여 액션적용이 안됨. View 밖에 살짝 걸쳐있는 객체일 경우, 밖에 걸쳐있는 객체를 클릭해도 액션을 적용하기 위해선 다음 작업을 해야함. 예를 들어 걸쳐있는 객체가 버튼이라고 할 때, 버튼을 View랑 동일한 수준으로 정렬해놓고(View내부에 버튼을 정렬하면안됨), 사이즈지정 해준다음에 액션을 콜하면 됨.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Multiplier는 곱하기 개념이기 때문에, 시작되는 Constant의 값이 0이면 적용되지 않음. " textAlignment="natural" id="iLb-uj-mBO">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="** 투명도 조절 **                    Alpha는 View가 포함하고 있는 전체 객체에 적용됨.      Opacity는 View(백그라운드)만 적용되고 나머지 객체에는 적용되지 X." textAlignment="natural" id="UFV-Oq-U6W">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="159.33333333333334"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="View 내부에 있는 컨텐츠 크기에 따라서 View 사이즈가 결정됨. 즉, View의 Y좌표가 없어도 내부에 있는 오브젝트들의 높이값에 따라 View의 Y좌표가 형성됨." textAlignment="natural" id="9Op-dh-QZr">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="159.33333333333334"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </objects>
+            <point key="canvasLocation" x="-42.028985507246382" y="115.7608695652174"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="balloon_3.png" width="1178" height="1744"/>
+        <image name="bg5.png" width="585" height="366"/>
+        <image name="done_check_icon.png" width="512" height="512"/>
+    </resources>
+</document>

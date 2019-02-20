@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExpandCell_1___18___" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Ix-9D-vw4">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="expandCell_ID" rowHeight="156" id="dFV-9O-Urh" customClass="ExpandCellDataFile" customModule="ExpandCell_1___18___" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dFV-9O-Urh" id="2CW-r6-zp5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="155.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cuc-UG-jBs">
+                                                    <rect key="frame" x="20" y="70" width="374" height="65.666666666666686"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza_food_20620.png" translatesAutoresizingMaskIntoConstraints="NO" id="zge-Be-tYx">
+                                                    <rect key="frame" x="20" y="20" width="40" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="uHL-iN-BLa"/>
+                                                        <constraint firstAttribute="width" constant="40" id="z6c-4k-fjV"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dl-hI-GVy">
+                                                    <rect key="frame" x="80" y="20" width="314" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Cuc-UG-jBs" secondAttribute="trailing" constant="20" id="02e-OG-vuj"/>
+                                                <constraint firstItem="zge-Be-tYx" firstAttribute="leading" secondItem="2CW-r6-zp5" secondAttribute="leading" constant="20" id="8DJ-dr-pyb"/>
+                                                <constraint firstItem="Cuc-UG-jBs" firstAttribute="top" secondItem="zge-Be-tYx" secondAttribute="bottom" constant="20" id="A8Y-xV-UDg"/>
+                                                <constraint firstAttribute="bottom" secondItem="Cuc-UG-jBs" secondAttribute="bottom" constant="20" id="AgA-bD-Gld"/>
+                                                <constraint firstItem="2Dl-hI-GVy" firstAttribute="top" secondItem="2CW-r6-zp5" secondAttribute="top" constant="20" id="ELW-r4-beZ"/>
+                                                <constraint firstItem="2Dl-hI-GVy" firstAttribute="leading" secondItem="zge-Be-tYx" secondAttribute="trailing" constant="20" id="FOt-xJ-Dbs"/>
+                                                <constraint firstItem="Cuc-UG-jBs" firstAttribute="leading" secondItem="2CW-r6-zp5" secondAttribute="leading" constant="20" id="HS7-6n-dHu"/>
+                                                <constraint firstItem="zge-Be-tYx" firstAttribute="top" secondItem="2CW-r6-zp5" secondAttribute="top" constant="20" id="RIs-bs-dyW"/>
+                                                <constraint firstAttribute="trailing" secondItem="2Dl-hI-GVy" secondAttribute="trailing" constant="20" id="hR7-X3-wer"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="descriptionString" destination="Cuc-UG-jBs" id="xS4-3m-feJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5lC-ar-Hzp"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2gt-Pf-GC3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Ix-9D-vw4" secondAttribute="trailing" id="2YR-EA-y7R"/>
+                            <constraint firstItem="2Ix-9D-vw4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ehb-ej-z2q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Ix-9D-vw4" secondAttribute="bottom" id="c4q-oa-y7z"/>
+                            <constraint firstItem="2Ix-9D-vw4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m0C-Mk-1Wf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.33333333333334" y="133.69565217391306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pizza_food_20620.png" width="256" height="256"/>
+    </resources>
+</document>

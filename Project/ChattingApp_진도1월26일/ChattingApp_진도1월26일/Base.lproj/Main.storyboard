@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChattingApp______1___26___" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UuX-uS-lRE">
+                                <rect key="frame" x="0.0" y="688" width="414" height="48"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8DC-Q3-Kkg">
+                                        <rect key="frame" x="4" y="4" width="340" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bL8-ON-LZQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGi-lu-heS">
+                                        <rect key="frame" x="348" y="0.0" width="66" height="48"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" title="전송"/>
+                                        <connections>
+                                            <action selector="sendAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcw-lN-6Rr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8DC-Q3-Kkg" firstAttribute="top" secondItem="UuX-uS-lRE" secondAttribute="top" constant="4" id="0Bz-L2-Fhn"/>
+                                    <constraint firstAttribute="bottom" secondItem="AGi-lu-heS" secondAttribute="bottom" id="7yy-ic-eu5"/>
+                                    <constraint firstAttribute="bottom" secondItem="8DC-Q3-Kkg" secondAttribute="bottom" constant="4" id="Agq-aT-JDL"/>
+                                    <constraint firstAttribute="trailing" secondItem="AGi-lu-heS" secondAttribute="trailing" id="B8x-66-m8U"/>
+                                    <constraint firstItem="AGi-lu-heS" firstAttribute="top" secondItem="UuX-uS-lRE" secondAttribute="top" id="Z6d-VP-a20"/>
+                                    <constraint firstItem="AGi-lu-heS" firstAttribute="leading" secondItem="8DC-Q3-Kkg" secondAttribute="trailing" constant="4" id="fwx-eO-fez"/>
+                                    <constraint firstItem="8DC-Q3-Kkg" firstAttribute="leading" secondItem="UuX-uS-lRE" secondAttribute="leading" constant="4" id="mx9-X6-3RH"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PVg-ZY-QR8">
+                                <rect key="frame" x="0.0" y="20" width="414" height="668"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PVg-ZY-QR8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Q5d-XZ-hOA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PVg-ZY-QR8" secondAttribute="trailing" id="RSw-n8-qbU"/>
+                            <constraint firstItem="UuX-uS-lRE" firstAttribute="top" secondItem="PVg-ZY-QR8" secondAttribute="bottom" id="Rch-ZP-MgJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UuX-uS-lRE" secondAttribute="trailing" id="WjN-pd-DMT"/>
+                            <constraint firstItem="UuX-uS-lRE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZEE-OO-N61"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UuX-uS-lRE" secondAttribute="bottom" id="nhf-lg-gYM"/>
+                            <constraint firstItem="PVg-ZY-QR8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rIt-Ny-6kQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chattingTableView" destination="PVg-ZY-QR8" id="0Ec-3c-7hW"/>
+                        <outlet property="inputTextView" destination="8DC-Q3-Kkg" id="YVy-WO-88T"/>
+                        <outlet property="inputTextViewBottomConstraint" destination="nhf-lg-gYM" id="wPz-0Q-c38"/>
+                        <outlet property="inputTextViewHeight" destination="bL8-ON-LZQ" id="Nea-Ug-RNL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" id="HHd-XY-yEo">
+                    <rect key="frame" x="0.0" y="0.0" width="543" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">간단한 TableViewCell이 아니면, 따로 Cell을 구성해준다음 xib파일 만들어서 연동해주는게 좋음. 여러개 Cell을 만들면 겹쳐서 보이지 않기 때문에 아예 새로운 코코아 터치 클래스 만들어줘서 작업해주는게 편함.                     💥 attributed inspector에 keyboard 옵션들가서, Dissmiss on drag 설정하면 TableView 클릭했을때 키보드 아래로 내려감.              </string>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.69565217391306"/>
+        </scene>
+    </scenes>
+</document>

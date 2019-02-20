@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Floating_Button" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBG_Blood.png" translatesAutoresizingMaskIntoConstraints="NO" id="3WP-sq-uUa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXM-vm-tOj">
+                                <rect key="frame" x="275" y="678" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="J4T-XH-Ofc"/>
+                                    <constraint firstAttribute="width" constant="60" id="h4g-76-wfB"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="add_icon_green.png"/>
+                                <connections>
+                                    <segue destination="hgC-lC-ud4" kind="show" identifier="showPopup" animates="NO" id="J7c-qi-aKP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3WP-sq-uUa" secondAttribute="trailing" id="61l-jr-4WI"/>
+                            <constraint firstAttribute="bottom" secondItem="3WP-sq-uUa" secondAttribute="bottom" id="6Fr-Vv-MT3"/>
+                            <constraint firstItem="3WP-sq-uUa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Eva-Ij-3tS"/>
+                            <constraint firstItem="3WP-sq-uUa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UsG-Bz-2uz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HXM-vm-tOj" secondAttribute="trailing" constant="40" id="YdV-Hh-j6N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HXM-vm-tOj" secondAttribute="bottom" constant="40" id="kKX-7j-144"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Button을 누르면  Action Segue - show 로 연결해줘야함. 연결해주면 연결되어있는 ViewController로 전환됨. Segue의 attributed inspector 가서 identifier를 설정해줘야함." textAlignment="natural" id="S9r-s2-sY0">
+                    <rect key="frame" x="0.0" y="0.0" width="373" height="202"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="세그웨이 클릭해서 attributed inspector에 있는 옵션 Animated 체크 해제해줘야함. 그래야 맨 처음 로드 될 때 나오는 애니메이션 효과 없어짐." textAlignment="natural" id="AUX-b6-fPb">
+                    <rect key="frame" x="0.0" y="0.0" width="373" height="202"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </objects>
+            <point key="canvasLocation" x="167" y="11"/>
+        </scene>
+        <!--Floating Button List View Controller-->
+        <scene sceneID="MJ0-3u-2n0">
+            <objects>
+                <viewController id="hgC-lC-ud4" customClass="FloatingButtonListViewController" customModule="Floating_Button" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="yBx-aA-rMu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsd-Mw-LBq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VLt-Q6-1s5">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ym-Is-Kb3" userLabel="Soda Button">
+                                <rect key="frame" x="280" y="443" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="UqX-Lw-cWP"/>
+                                    <constraint firstAttribute="height" constant="50" id="c2O-KJ-vlM"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="food1.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dT0-q2-Y9o" userLabel="Coffee Button">
+                                <rect key="frame" x="280" y="523" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="obR-Bv-ZzC"/>
+                                    <constraint firstAttribute="width" constant="50" id="tOC-5a-S02"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="food2.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uR-PW-o5o" userLabel="WIne Button">
+                                <rect key="frame" x="280" y="603" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="hAt-jp-RlA"/>
+                                    <constraint firstAttribute="height" constant="50" id="n1a-Sa-QVQ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="food3.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgn-ne-ByN" userLabel="Plus Button">
+                                <rect key="frame" x="275" y="678" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1Ag-Im-wJx"/>
+                                    <constraint firstAttribute="width" constant="60" id="iWA-8z-fHn"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="add_icon_green.png"/>
+                                <connections>
+                                    <action selector="dismissFloating:" destination="hgC-lC-ud4" eventType="touchUpInside" id="4U1-Uu-cMa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="jgn-ne-ByN" firstAttribute="centerX" secondItem="dT0-q2-Y9o" secondAttribute="centerX" id="4Pi-wn-tnS"/>
+                            <constraint firstItem="jgn-ne-ByN" firstAttribute="centerY" secondItem="4ym-Is-Kb3" secondAttribute="centerY" constant="240" id="Kp9-2R-JiX"/>
+                            <constraint firstItem="jgn-ne-ByN" firstAttribute="centerY" secondItem="2uR-PW-o5o" secondAttribute="centerY" constant="80" id="We5-Of-RDu"/>
+                            <constraint firstItem="jgn-ne-ByN" firstAttribute="centerX" secondItem="4ym-Is-Kb3" secondAttribute="centerX" id="Ygt-LM-iny"/>
+                            <constraint firstItem="bsd-Mw-LBq" firstAttribute="leading" secondItem="yBx-aA-rMu" secondAttribute="leading" id="aiT-jG-eIS"/>
+                            <constraint firstItem="bsd-Mw-LBq" firstAttribute="top" secondItem="yBx-aA-rMu" secondAttribute="top" id="ibZ-ND-jf4"/>
+                            <constraint firstItem="z96-WJ-0AF" firstAttribute="trailing" secondItem="jgn-ne-ByN" secondAttribute="trailing" constant="40" id="mLD-x0-bwZ"/>
+                            <constraint firstAttribute="bottom" secondItem="bsd-Mw-LBq" secondAttribute="bottom" id="nv7-hl-zUd"/>
+                            <constraint firstItem="jgn-ne-ByN" firstAttribute="centerY" secondItem="dT0-q2-Y9o" secondAttribute="centerY" constant="160" id="sfO-y4-4SY"/>
+                            <constraint firstItem="z96-WJ-0AF" firstAttribute="bottom" secondItem="jgn-ne-ByN" secondAttribute="bottom" constant="40" id="yoX-mu-dOn"/>
+                            <constraint firstAttribute="trailing" secondItem="bsd-Mw-LBq" secondAttribute="trailing" id="z4A-nx-Ath"/>
+                            <constraint firstItem="jgn-ne-ByN" firstAttribute="centerX" secondItem="2uR-PW-o5o" secondAttribute="centerX" id="zPu-4N-4RR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z96-WJ-0AF"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1CenterY" destination="We5-Of-RDu" id="tKz-1t-yU9"/>
+                        <outlet property="button2CenterY" destination="sfO-y4-4SY" id="VJu-vG-yIF"/>
+                        <outlet property="button3CenterY" destination="Kp9-2R-JiX" id="kd3-WW-Hzb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4X-qN-dMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="VIsual Effect View with blur를 추가해서 전체 Constraint 0, 화면 꽉차게 superview로 설정해줘야함" textAlignment="natural" id="7hj-gB-RtR">
+                    <rect key="frame" x="0.0" y="0.0" width="351" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </objects>
+            <point key="canvasLocation" x="1083" y="12"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WeatherBG_Blood.png" width="750" height="1334"/>
+        <image name="add_icon_green.png" width="482" height="481"/>
+        <image name="food1.png" width="256" height="256"/>
+        <image name="food2.png" width="256" height="256"/>
+        <image name="food3.png" width="256" height="256"/>
+    </resources>
+</document>

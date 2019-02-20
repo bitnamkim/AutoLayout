@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Basic_12_compression_resistance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="aaaaaaaaaaaaaaaaaaaaa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72m-aQ-4PK" userLabel="Pink Label">
+                                <rect key="frame" x="20" y="40" width="283" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.48494160739999997" blue="0.97931163499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq8-eL-0HR" userLabel="Orange Label">
+                                <rect key="frame" x="323" y="40" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.63701717069999997" blue="0.22296334670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zvd-0a-wbX">
+                                <rect key="frame" x="26" y="166" width="363" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Compression Resistance Priority : 찌그러지거나 눌러지는 것을 막는다.  레이블에 들어가있는 콘텐츠가 많아서 다른 레이블을 침범하는 경우가 있음. 이 때 Compression Resistance Priority가 다른 객체보다 크면 크기가 작아지고 찌그러지는것을 막아서, 크기를 일정하게 유지하는 것을 뜻함. Compression Resistance Priority의 숫자가 커야지 내 크기가 그대로 유지됨(밀리거나 찌그러지지 않음).</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Attributes Inspector 들어가서 &quot;Line Break&quot; UI 클릭하면 눌러보면 생략하는 스타일 나와있음. 이거 준내 중요함. 연습해보는거 추천!   이거 잘 해야 UI 구성 잘할 수 있음." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6hg-0E-BJS">
+                                <rect key="frame" x="13" y="388" width="388" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="72m-aQ-4PK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OEf-zy-cTx"/>
+                            <constraint firstItem="72m-aQ-4PK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="OkR-Aq-ja9"/>
+                            <constraint firstItem="Zq8-eL-0HR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="P5Y-Nm-hin"/>
+                            <constraint firstItem="Zq8-eL-0HR" firstAttribute="leading" secondItem="72m-aQ-4PK" secondAttribute="trailing" constant="20" id="PaI-Uq-IJA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zq8-eL-0HR" secondAttribute="trailing" constant="20" id="ekB-yC-VHE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204.34782608695653" y="124.72826086956523"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Dav-TX-OCV">
+            <objects>
+                <viewController id="55Z-a0-8wR" customClass="ViewController" customModule="Basic_12_compression_resistance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RTt-n2-4Ef">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Title Title Title Title Title Title Title Title" textAlignment="natural" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5i-ra-cDX">
+                                <rect key="frame" x="20" y="40" width="91" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Date Date Date" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6g-IY-FXH">
+                                <rect key="frame" x="131" y="40" width="263" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x5i-ra-cDX" firstAttribute="leading" secondItem="Pzu-Af-WnX" secondAttribute="leading" constant="20" id="3Ya-dD-Ho8"/>
+                            <constraint firstItem="x5i-ra-cDX" firstAttribute="top" secondItem="Pzu-Af-WnX" secondAttribute="top" constant="20" id="7RN-kf-WLM"/>
+                            <constraint firstItem="U6g-IY-FXH" firstAttribute="leading" secondItem="x5i-ra-cDX" secondAttribute="trailing" constant="20" id="CLN-nn-6fr"/>
+                            <constraint firstItem="U6g-IY-FXH" firstAttribute="top" secondItem="Pzu-Af-WnX" secondAttribute="top" constant="20" id="HSl-PJ-BoK"/>
+                            <constraint firstItem="Pzu-Af-WnX" firstAttribute="trailing" secondItem="U6g-IY-FXH" secondAttribute="trailing" constant="20" id="lLq-B7-Kcj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pzu-Af-WnX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oVb-nn-P06" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="125"/>
+        </scene>
+    </scenes>
+</document>

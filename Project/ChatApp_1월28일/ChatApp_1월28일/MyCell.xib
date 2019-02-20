@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell_ID" rowHeight="230" id="KGk-i7-Jjw" customClass="MyCell" customModule="ChatApp_1___28___" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="467" height="229.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myBubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="04p-xB-G8L">
+                        <rect key="frame" x="87.5" y="10" width="369.5" height="209.5"/>
+                        <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="755" verticalHuggingPriority="755" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tqp-QM-VVS">
+                        <rect key="frame" x="97.5" y="20" width="319.5" height="189.5"/>
+                        <string key="text">123456712345671236712345671234567123456712345671236712345671234567123456712345671236712345671234567123456712345671236712345671234567123456712345671236712345671234567123456712345671236712345671234567123456712345671236712345671234567123456712345671236712345671234567123456712345671236712345671234567123456712345671236712345671234567</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.1.1." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bc-xh-sue">
+                        <rect key="frame" x="40" y="207.5" width="42.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4bc-xh-sue" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="1H1-73-iZr"/>
+                    <constraint firstItem="tqp-QM-VVS" firstAttribute="bottom" secondItem="04p-xB-G8L" secondAttribute="bottom" constant="-10" id="3Sj-cs-a6h"/>
+                    <constraint firstItem="tqp-QM-VVS" firstAttribute="trailing" secondItem="04p-xB-G8L" secondAttribute="trailing" constant="-40" id="3gM-ZH-h8h"/>
+                    <constraint firstAttribute="bottom" secondItem="04p-xB-G8L" secondAttribute="bottom" constant="10" id="D8I-3F-m3Q"/>
+                    <constraint firstItem="04p-xB-G8L" firstAttribute="leading" secondItem="4bc-xh-sue" secondAttribute="trailing" constant="5" id="ULZ-gS-AB4"/>
+                    <constraint firstItem="04p-xB-G8L" firstAttribute="bottom" secondItem="4bc-xh-sue" secondAttribute="bottom" id="adS-lb-N44"/>
+                    <constraint firstAttribute="trailing" secondItem="04p-xB-G8L" secondAttribute="trailing" constant="10" id="f2H-fG-liV"/>
+                    <constraint firstItem="tqp-QM-VVS" firstAttribute="leading" secondItem="04p-xB-G8L" secondAttribute="leading" constant="10" id="usM-Wq-LzA"/>
+                    <constraint firstItem="tqp-QM-VVS" firstAttribute="top" secondItem="04p-xB-G8L" secondAttribute="top" constant="10" id="wfi-8n-bIL"/>
+                    <constraint firstItem="04p-xB-G8L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zuc-Ku-G7t"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="250.40000000000001" y="238.38080959520241"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="myBubble.png" width="66" height="52"/>
+    </resources>
+</document>

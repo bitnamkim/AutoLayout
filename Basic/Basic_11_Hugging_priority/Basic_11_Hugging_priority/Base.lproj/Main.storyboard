@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Basic_11_Hugging_priority" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6p-yb-lgx" userLabel="Pink Label">
+                                <rect key="frame" x="20" y="60" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.48494160739999997" blue="0.97931163499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozC-v3-oRm" userLabel="Orange Label">
+                                <rect key="frame" x="111" y="60" width="192" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.63701717069999997" blue="0.22296334670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ePG-7s-UD8" userLabel="설명1">
+                                <rect key="frame" x="28" y="168" width="358" height="291.66666666666669"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">사이즈가 작은 Content Hugging Priority는 Hugging을 할 수 없음. 사이즈가 큰 Content Hugging Priority 가 Hugging을 할 수 있고, Hugging을 주도하는 Label이 먼저 제대로 사이즈를 표시하고 Hugging을 당하는 Label은 나중에 사이즈를 표시할 수 있음(나중에 표시된건 사이즈가 이상하게 잡힘. 여기선 오렌지 Label의 Hugging Priority Horizontal의 사이즈가 가장 작기 때문에 얘가 사이즈 이상하게 잡힌거임.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvj-ln-w3A" userLabel="Blue Label">
+                                <rect key="frame" x="323" y="60" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.1004316244" green="0.30739310469999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pfs-5k-XTI" userLabel="설명2">
+                                <rect key="frame" x="20" y="486" width="366" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">우선순위가 높은 오브젝트는 먼저 크기와 위치를 조정할 수 있는 우선순위를 가짐. 우선순위가 낮은 오브젝트는 우선순위가 높은 오브젝트들에 의해 밀리거나 당겨지는 형태를 보임!                        숫자가 클수록 우선순위가 높은거임! 숫자 1000이 맥시멈임.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ozC-v3-oRm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Ncq-bJ-Cqs"/>
+                            <constraint firstItem="Pvj-ln-w3A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Th8-Dk-xby"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pvj-ln-w3A" secondAttribute="trailing" constant="20" id="YIt-ab-3fV"/>
+                            <constraint firstItem="ozC-v3-oRm" firstAttribute="leading" secondItem="w6p-yb-lgx" secondAttribute="trailing" constant="20" id="dY1-Pn-9EC"/>
+                            <constraint firstItem="Pvj-ln-w3A" firstAttribute="leading" secondItem="ozC-v3-oRm" secondAttribute="trailing" constant="20" id="md0-Vj-OnX"/>
+                            <constraint firstItem="w6p-yb-lgx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="qwf-qE-Sme"/>
+                            <constraint firstItem="w6p-yb-lgx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sFV-wf-ecT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Label은 Width, Height 크기 지정을 안해줘도 됨. 텍스트 크기대로 Label 사이즈가 변하기 때문에 안해줘도 됨!" textAlignment="natural" id="LUJ-zS-MlH">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </objects>
+            <point key="canvasLocation" x="-82.608695652173921" y="133.69565217391306"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pZ0-cF-mue">
+            <objects>
+                <viewController id="eu4-I0-FOf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N5n-Lv-QXl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxb-vC-8gu" userLabel="Black Label">
+                                <rect key="frame" x="134" y="60" width="146" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Constraints 설정에 필요한 2가지         - 위치(X,Y) , 크기 (Width, Height) " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0CC-uK-hr5">
+                                <rect key="frame" x="40" y="341" width="309" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzP-vg-Nzw" userLabel="Pink Label">
+                                <rect key="frame" x="20" y="60" width="94" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.48494160739999997" blue="0.97931163499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoW-Fc-0UJ" userLabel="Red Label">
+                                <rect key="frame" x="300" y="60" width="94" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.03020554006513354" blue="0.046732593175383474" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="상황에 따라서 균등배분 하고 싶을 때, Hugging Priority를 사용함." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LAm-s5-OqR">
+                                <rect key="frame" x="40" y="179" width="309" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WoW-Fc-0UJ" firstAttribute="top" secondItem="zNf-gN-WOT" secondAttribute="top" constant="40" id="Jjf-v6-h1m"/>
+                            <constraint firstItem="zNf-gN-WOT" firstAttribute="trailing" secondItem="WoW-Fc-0UJ" secondAttribute="trailing" constant="20" id="KTR-en-VCu"/>
+                            <constraint firstItem="NzP-vg-Nzw" firstAttribute="top" secondItem="zNf-gN-WOT" secondAttribute="top" constant="40" id="Qjg-yu-RkJ"/>
+                            <constraint firstItem="NzP-vg-Nzw" firstAttribute="leading" secondItem="zNf-gN-WOT" secondAttribute="leading" constant="20" id="UvT-Sr-z6g"/>
+                            <constraint firstItem="uxb-vC-8gu" firstAttribute="leading" secondItem="NzP-vg-Nzw" secondAttribute="trailing" constant="20" id="ah0-wN-pAP"/>
+                            <constraint firstItem="uxb-vC-8gu" firstAttribute="top" secondItem="zNf-gN-WOT" secondAttribute="top" constant="40" id="eJZ-1B-SnR"/>
+                            <constraint firstItem="WoW-Fc-0UJ" firstAttribute="leading" secondItem="uxb-vC-8gu" secondAttribute="trailing" constant="20" id="hdm-Lv-HOe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zNf-gN-WOT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vnS-t8-JoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="634.78260869565224" y="133.69565217391306"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HLk-Lo-bwN">
+            <objects>
+                <viewController id="mF9-fM-il4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="67n-NA-fla">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmv-9L-Xhe">
+                                <rect key="frame" x="20" y="60" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="ddddddddddddddddd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8g-VA-yQR">
+                                <rect key="frame" x="111" y="60" width="192" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpz-GE-NII">
+                                <rect key="frame" x="323" y="60" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVh-ZR-Ub5">
+                                <rect key="frame" x="40" y="136" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSP-Bo-okp">
+                                <rect key="frame" x="122" y="136" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mpz-GE-NII" firstAttribute="leading" secondItem="e8g-VA-yQR" secondAttribute="trailing" constant="20" id="IMm-zR-vvM"/>
+                            <constraint firstAttribute="trailing" secondItem="Mpz-GE-NII" secondAttribute="trailing" constant="20" id="Pul-VN-Pto"/>
+                            <constraint firstItem="ZSP-Bo-okp" firstAttribute="top" secondItem="e8g-VA-yQR" secondAttribute="bottom" constant="40" id="X8j-A4-Q44"/>
+                            <constraint firstItem="CVh-ZR-Ub5" firstAttribute="leading" secondItem="8Qw-Qe-dLq" secondAttribute="leading" constant="40" id="Xbo-ad-ipo"/>
+                            <constraint firstItem="Xmv-9L-Xhe" firstAttribute="leading" secondItem="8Qw-Qe-dLq" secondAttribute="leading" constant="20" id="Zj8-My-5l6"/>
+                            <constraint firstItem="e8g-VA-yQR" firstAttribute="leading" secondItem="Xmv-9L-Xhe" secondAttribute="trailing" constant="20" id="b4b-jP-s4j"/>
+                            <constraint firstItem="8Qw-Qe-dLq" firstAttribute="trailing" secondItem="ZSP-Bo-okp" secondAttribute="trailing" constant="40" id="ctC-f1-Fc0"/>
+                            <constraint firstItem="Xmv-9L-Xhe" firstAttribute="top" secondItem="8Qw-Qe-dLq" secondAttribute="top" constant="40" id="hXF-s4-POk"/>
+                            <constraint firstItem="e8g-VA-yQR" firstAttribute="top" secondItem="8Qw-Qe-dLq" secondAttribute="top" constant="40" id="lih-fN-FXZ"/>
+                            <constraint firstItem="Mpz-GE-NII" firstAttribute="top" secondItem="8Qw-Qe-dLq" secondAttribute="top" constant="40" id="qOZ-HC-HNc"/>
+                            <constraint firstItem="ZSP-Bo-okp" firstAttribute="leading" secondItem="CVh-ZR-Ub5" secondAttribute="trailing" constant="40" id="qlz-dq-d3d"/>
+                            <constraint firstItem="CVh-ZR-Ub5" firstAttribute="top" secondItem="Xmv-9L-Xhe" secondAttribute="bottom" constant="40" id="xLN-Bz-J80"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Qw-Qe-dLq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekk-lj-m0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1334.7826086956522" y="131.25"/>
+        </scene>
+    </scenes>
+</document>

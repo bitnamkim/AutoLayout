@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="268" id="KGk-i7-Jjw" customClass="MyCell" customModule="Calc_StackView_1_2_____________" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="624" height="268"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="624" height="267.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myBubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rl1-BY-Rzp">
+                        <rect key="frame" x="555.5" y="10" width="58.5" height="247.5"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="755" verticalHuggingPriority="755" scrollEnabled="NO" text="ㅁㅁㅁㅁ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sR7-8y-zRK">
+                        <rect key="frame" x="555.5" y="10" width="58.5" height="247.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019.1.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cg-cU-JYR">
+                        <rect key="frame" x="511.5" y="245.5" width="39" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myBubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="5dp-R1-4jp">
+                        <rect key="frame" x="10" y="10" width="67.5" height="247.5"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="755" verticalHuggingPriority="755" scrollEnabled="NO" text="1234567" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QT0-g3-HLb">
+                        <rect key="frame" x="10" y="10" width="67.5" height="247.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sR7-8y-zRK" firstAttribute="bottom" secondItem="Rl1-BY-Rzp" secondAttribute="bottom" id="5rl-Xj-U1Q"/>
+                    <constraint firstItem="5dp-R1-4jp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Aca-ey-nqA"/>
+                    <constraint firstItem="Rl1-BY-Rzp" firstAttribute="leading" secondItem="0cg-cU-JYR" secondAttribute="trailing" constant="5" id="Ipf-sA-T0M"/>
+                    <constraint firstItem="QT0-g3-HLb" firstAttribute="top" secondItem="5dp-R1-4jp" secondAttribute="top" id="JBy-x2-XGK"/>
+                    <constraint firstItem="Rl1-BY-Rzp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Msn-kb-xVo"/>
+                    <constraint firstItem="5dp-R1-4jp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NDp-ae-PXn"/>
+                    <constraint firstAttribute="trailing" secondItem="Rl1-BY-Rzp" secondAttribute="trailing" constant="10" id="QeQ-Om-ERR"/>
+                    <constraint firstItem="sR7-8y-zRK" firstAttribute="trailing" secondItem="Rl1-BY-Rzp" secondAttribute="trailing" id="YLq-Sb-s1X"/>
+                    <constraint firstItem="sR7-8y-zRK" firstAttribute="top" secondItem="Rl1-BY-Rzp" secondAttribute="top" id="Z5k-wx-fLc"/>
+                    <constraint firstItem="QT0-g3-HLb" firstAttribute="bottom" secondItem="5dp-R1-4jp" secondAttribute="bottom" id="cNa-pn-9pd"/>
+                    <constraint firstItem="sR7-8y-zRK" firstAttribute="leading" secondItem="Rl1-BY-Rzp" secondAttribute="leading" id="cWs-NU-S75"/>
+                    <constraint firstAttribute="bottom" secondItem="5dp-R1-4jp" secondAttribute="bottom" constant="10" id="gth-8u-xrM"/>
+                    <constraint firstAttribute="bottom" secondItem="Rl1-BY-Rzp" secondAttribute="bottom" constant="10" id="jHD-pv-dWR"/>
+                    <constraint firstItem="QT0-g3-HLb" firstAttribute="trailing" secondItem="5dp-R1-4jp" secondAttribute="trailing" id="jor-3k-XnE"/>
+                    <constraint firstItem="Rl1-BY-Rzp" firstAttribute="bottom" secondItem="0cg-cU-JYR" secondAttribute="bottom" id="yu7-Kn-3hg"/>
+                    <constraint firstItem="QT0-g3-HLb" firstAttribute="leading" secondItem="5dp-R1-4jp" secondAttribute="leading" id="ztp-RH-hDz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="185.59999999999999" y="126.83658170914543"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="myBubble.png" width="66" height="52"/>
+    </resources>
+</document>

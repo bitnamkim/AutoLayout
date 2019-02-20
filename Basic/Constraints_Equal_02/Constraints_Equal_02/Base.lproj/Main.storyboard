@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Constraints_Equal_02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFi-wm-TWa" userLabel="Pink View">
+                                <rect key="frame" x="20" y="387" width="335" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.5802505926" blue="0.87064097389999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="HqU-LE-k4n"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMC-Ty-Ydh" userLabel="Blue View">
+                                <rect key="frame" x="20" y="527" width="335" height="120"/>
+                                <color key="backgroundColor" red="0.1004316244" green="0.30739310469999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STX-R3-8pe" userLabel="Orange View">
+                                <rect key="frame" x="20" y="40" width="335" height="327"/>
+                                <color key="backgroundColor" red="1" green="0.63701717069999997" blue="0.22296334670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mMC-Ty-Ydh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4pG-nb-8TQ"/>
+                            <constraint firstItem="ZFi-wm-TWa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AzI-pZ-Cwf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mMC-Ty-Ydh" secondAttribute="trailing" constant="20" id="CYY-oE-Qqw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mMC-Ty-Ydh" secondAttribute="bottom" constant="20" id="FKa-wi-E4W"/>
+                            <constraint firstItem="STX-R3-8pe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Tne-sP-pOC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="STX-R3-8pe" secondAttribute="trailing" constant="20" id="UcO-HS-X3F"/>
+                            <constraint firstItem="ZFi-wm-TWa" firstAttribute="top" secondItem="STX-R3-8pe" secondAttribute="bottom" constant="20" id="hRH-3L-GcY"/>
+                            <constraint firstItem="mMC-Ty-Ydh" firstAttribute="top" secondItem="ZFi-wm-TWa" secondAttribute="bottom" constant="20" id="mBb-8F-40R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZFi-wm-TWa" secondAttribute="trailing" constant="20" id="n5W-UT-7cK"/>
+                            <constraint firstItem="ZFi-wm-TWa" firstAttribute="height" secondItem="mMC-Ty-Ydh" secondAttribute="height" id="oKc-UW-1jA"/>
+                            <constraint firstItem="STX-R3-8pe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qqG-kn-RX7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="객체가 여러개 있고 좌우상하 Constraint를 설정해줄때, 겹치는 부분은 Constraint가 1개만 잡힘. 중복돼서 잡히지 않음." textAlignment="natural" id="edg-OP-K50">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="135.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Psq-Wo-n2T">
+            <objects>
+                <viewController id="INY-k5-8Fz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sLs-xe-5na">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLY-Wn-ybT" userLabel="Orange View">
+                                <rect key="frame" x="20" y="40" width="70" height="607"/>
+                                <color key="backgroundColor" red="1" green="0.63701717069999997" blue="0.22296334670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="nEa-YD-Tma"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74x-Mm-UGF" userLabel="Blue View">
+                                <rect key="frame" x="242.5" y="40" width="112.5" height="607"/>
+                                <color key="backgroundColor" red="0.1004316244" green="0.30739310469999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOE-5m-Wcf" userLabel="Pink View">
+                                <rect key="frame" x="110" y="40" width="112.5" height="607"/>
+                                <color key="backgroundColor" red="1" green="0.5802505926" blue="0.87064097389999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112.5" id="fYX-Dw-72M"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BLY-Wn-ybT" firstAttribute="leading" secondItem="esC-mq-6lx" secondAttribute="leading" constant="20" id="6HA-04-R4s"/>
+                            <constraint firstItem="74x-Mm-UGF" firstAttribute="top" secondItem="esC-mq-6lx" secondAttribute="top" constant="20" id="JnW-DU-V4z"/>
+                            <constraint firstItem="esC-mq-6lx" firstAttribute="bottom" secondItem="YOE-5m-Wcf" secondAttribute="bottom" constant="20" id="LeH-X9-jF1"/>
+                            <constraint firstItem="esC-mq-6lx" firstAttribute="trailing" secondItem="74x-Mm-UGF" secondAttribute="trailing" constant="20" id="NZ9-Ph-EcK"/>
+                            <constraint firstItem="YOE-5m-Wcf" firstAttribute="leading" secondItem="BLY-Wn-ybT" secondAttribute="trailing" constant="20" id="Nt2-by-sys"/>
+                            <constraint firstItem="BLY-Wn-ybT" firstAttribute="top" secondItem="esC-mq-6lx" secondAttribute="top" constant="20" id="RVC-KS-yHY"/>
+                            <constraint firstItem="esC-mq-6lx" firstAttribute="bottom" secondItem="74x-Mm-UGF" secondAttribute="bottom" constant="20" id="ggf-EM-24J"/>
+                            <constraint firstItem="74x-Mm-UGF" firstAttribute="leading" secondItem="YOE-5m-Wcf" secondAttribute="trailing" constant="20" id="k13-ne-tT1"/>
+                            <constraint firstItem="esC-mq-6lx" firstAttribute="bottom" secondItem="BLY-Wn-ybT" secondAttribute="bottom" constant="20" id="l9z-W4-C4p"/>
+                            <constraint firstItem="YOE-5m-Wcf" firstAttribute="top" secondItem="esC-mq-6lx" secondAttribute="top" constant="20" id="sBu-Zu-15m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="esC-mq-6lx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p9Q-ym-GuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="객체가 총 3개 일 때, 1개만 Width or Height 값 설정. 그리고 나머지 2개끼리 Equal Width or Height 해줘도 됨!" textAlignment="natural" id="bFk-t9-wHe">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="객체가 총 3개 일 때, 2개 객체의 Width or Height 값 설정. 그러면 나머지 1개 객체의 사이즈는 알아서 설정됨." textAlignment="natural" id="pSf-Me-PsX">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </objects>
+            <point key="canvasLocation" x="933.60000000000002" y="134.48275862068968"/>
+        </scene>
+    </scenes>
+</document>

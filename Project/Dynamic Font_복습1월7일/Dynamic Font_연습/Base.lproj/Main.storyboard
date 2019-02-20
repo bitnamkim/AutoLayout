@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="KPS-qb-hss">
+            <objects>
+                <viewController id="sXH-B8-ssQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ssx-Rg-Jgj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCf-6F-YLx">
+                                <rect key="frame" x="20" y="101.33333333333331" width="374" height="533.33333333333348"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cert_BG.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="cip-oQ-ACu">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="533.33333333333337"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="발급처 : 한국은행" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXD-fB-mv2">
+                                        <rect key="frame" x="93.666666666666686" y="0.0" width="187" height="426.66666666666669"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름 : 홍길동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKJ-Sn-C9w">
+                                        <rect key="frame" x="93.666666666666686" y="0.0" width="187" height="480"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fXD-fB-mv2" firstAttribute="centerX" secondItem="cip-oQ-ACu" secondAttribute="centerX" id="2vc-fg-kE0"/>
+                                    <constraint firstAttribute="width" secondItem="uCf-6F-YLx" secondAttribute="height" multiplier="1009:1438" id="D6Q-6F-gUa"/>
+                                    <constraint firstItem="cip-oQ-ACu" firstAttribute="leading" secondItem="uCf-6F-YLx" secondAttribute="leading" id="Ft7-Qd-wbe"/>
+                                    <constraint firstItem="uKJ-Sn-C9w" firstAttribute="width" secondItem="cip-oQ-ACu" secondAttribute="width" multiplier="0.5" id="KSc-wt-suq"/>
+                                    <constraint firstAttribute="bottom" secondItem="cip-oQ-ACu" secondAttribute="bottom" id="KnJ-6f-eqf"/>
+                                    <constraint firstItem="uKJ-Sn-C9w" firstAttribute="leading" secondItem="fXD-fB-mv2" secondAttribute="leading" id="MEm-w8-Osj"/>
+                                    <constraint firstAttribute="trailing" secondItem="cip-oQ-ACu" secondAttribute="trailing" id="fJv-aQ-ORt"/>
+                                    <constraint firstItem="uKJ-Sn-C9w" firstAttribute="bottom" secondItem="cip-oQ-ACu" secondAttribute="bottom" multiplier="0.9" id="gpt-oa-TGK"/>
+                                    <constraint firstItem="fXD-fB-mv2" firstAttribute="top" secondItem="cip-oQ-ACu" secondAttribute="top" id="leJ-eJ-keY"/>
+                                    <constraint firstItem="fXD-fB-mv2" firstAttribute="width" secondItem="cip-oQ-ACu" secondAttribute="width" multiplier="0.5" id="pfb-hs-WT5"/>
+                                    <constraint firstItem="uKJ-Sn-C9w" firstAttribute="top" secondItem="cip-oQ-ACu" secondAttribute="top" id="puS-En-b2N"/>
+                                    <constraint firstItem="fXD-fB-mv2" firstAttribute="bottom" secondItem="cip-oQ-ACu" secondAttribute="bottom" multiplier="0.8" id="s4q-5V-Idv"/>
+                                    <constraint firstItem="cip-oQ-ACu" firstAttribute="top" secondItem="uCf-6F-YLx" secondAttribute="top" id="uGE-Sx-Igz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="veU-Jn-HFd" firstAttribute="trailing" secondItem="uCf-6F-YLx" secondAttribute="trailing" constant="20" id="Ba6-jt-WqH"/>
+                            <constraint firstItem="uCf-6F-YLx" firstAttribute="centerY" secondItem="Ssx-Rg-Jgj" secondAttribute="centerY" id="Lq5-3o-PdS"/>
+                            <constraint firstItem="uCf-6F-YLx" firstAttribute="leading" secondItem="veU-Jn-HFd" secondAttribute="leading" constant="20" id="u2b-Lk-LuI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="veU-Jn-HFd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bp-uG-ODx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="-193"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cert_BG.PNG" width="1009" height="1438"/>
+    </resources>
+</document>

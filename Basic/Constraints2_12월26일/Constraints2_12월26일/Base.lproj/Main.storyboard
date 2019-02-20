@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mQL-nF-IWA">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Constraints2_12___26___" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBV-9L-W9a">
+                                <rect key="frame" x="87.666666666666686" y="578" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.63701717069999997" blue="0.22296334670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="GKu-93-XfG"/>
+                                    <constraint firstAttribute="width" constant="200" id="ndX-rg-bDj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GcY-u7-EYf" firstAttribute="bottom" secondItem="yBV-9L-W9a" secondAttribute="bottom" id="9Iv-aG-YUb"/>
+                            <constraint firstItem="yBV-9L-W9a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c4G-yv-v0H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GcY-u7-EYf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="x,y의 좌표 + Width, Height 값이 있어야 오류가 나지 않음. 위치 + 너비, 높이의 개념이 있어야 오류가 안나는거임!" textAlignment="natural" id="pzz-Hv-xYT">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </objects>
+            <point key="canvasLocation" x="40.579710144927539" y="26.086956521739133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vfi-E3-vZP">
+            <objects>
+                <viewController id="mQL-nF-IWA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kkK-vd-hVF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="night_sky.png" translatesAutoresizingMaskIntoConstraints="NO" id="X9I-fH-yCr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="X9I-fH-yCr" firstAttribute="leading" secondItem="kkK-vd-hVF" secondAttribute="leading" id="4W6-fR-xLN"/>
+                            <constraint firstItem="X9I-fH-yCr" firstAttribute="top" secondItem="kkK-vd-hVF" secondAttribute="top" id="TAC-yh-k4P"/>
+                            <constraint firstAttribute="bottom" secondItem="X9I-fH-yCr" secondAttribute="bottom" id="sQV-jR-bMJ"/>
+                            <constraint firstAttribute="trailing" secondItem="X9I-fH-yCr" secondAttribute="trailing" id="zyC-ID-agf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kFx-Km-esn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w91-eb-trt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="Qok-EZ-t0I">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="231"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">전체화면 꽉차게 색깔 칠하기 -&gt; 최상단 View 클릭해서 색깔넣기.                                    전체화면 꽉차게 이미지 넣기 -&gt; 이미지 뷰에 이미지 넣은 다음에, Constraint 4개 0으로 설정. 그 다음 Constraint 따블클릭해서 Safe Area를 Super View로 바꾸기</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </objects>
+            <point key="canvasLocation" x="905" y="35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="night_sky.png" width="1242" height="2208"/>
+    </resources>
+</document>

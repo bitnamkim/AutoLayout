@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourCell_ID" rowHeight="305" id="KGk-i7-Jjw" customClass="YourCell" customModule="ChatApp_1___28___" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="509" height="305"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="509" height="304.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yourBubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="cHq-DK-fLY">
+                        <rect key="frame" x="10" y="10" width="86" height="284.5"/>
+                        <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="755" verticalHuggingPriority="755" scrollEnabled="NO" text="12345" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V1f-V8-RZs">
+                        <rect key="frame" x="35" y="15" width="51" height="269.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.1.1." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwi-CK-9UW">
+                        <rect key="frame" x="101" y="282.5" width="43" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cHq-DK-fLY" secondAttribute="bottom" constant="10" id="DVd-TX-VcB"/>
+                    <constraint firstItem="mwi-CK-9UW" firstAttribute="bottom" secondItem="cHq-DK-fLY" secondAttribute="bottom" id="KEW-yJ-7Kd"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mwi-CK-9UW" secondAttribute="trailing" constant="40" id="L2a-sY-2xg"/>
+                    <constraint firstItem="V1f-V8-RZs" firstAttribute="bottom" secondItem="cHq-DK-fLY" secondAttribute="bottom" constant="-10" id="PK3-Lv-eHm"/>
+                    <constraint firstItem="V1f-V8-RZs" firstAttribute="top" secondItem="cHq-DK-fLY" secondAttribute="top" constant="5" id="Qbt-Jl-aVf"/>
+                    <constraint firstItem="V1f-V8-RZs" firstAttribute="trailing" secondItem="cHq-DK-fLY" secondAttribute="trailing" constant="-10" id="Sin-qO-jHc"/>
+                    <constraint firstItem="cHq-DK-fLY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="W65-Yz-xyj"/>
+                    <constraint firstItem="cHq-DK-fLY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WPQ-qh-jFI"/>
+                    <constraint firstItem="V1f-V8-RZs" firstAttribute="leading" secondItem="cHq-DK-fLY" secondAttribute="leading" constant="25" id="YVh-UO-rRz"/>
+                    <constraint firstItem="mwi-CK-9UW" firstAttribute="leading" secondItem="cHq-DK-fLY" secondAttribute="trailing" constant="5" id="rwd-uy-nfT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="133.59999999999999" y="201.94902548725639"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yourBubble.png" width="66" height="52"/>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Basic_16_Margin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHO-h7-4R8" userLabel="Red View">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQN-7V-sIF" userLabel="Pink View">
+                                        <rect key="frame" x="20" y="20" width="374" height="676"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9T-wU-tty">
+                                                <rect key="frame" x="30" y="30.000000000000014" width="314" height="205.33333333333337"/>
+                                                <color key="backgroundColor" red="1" green="0.63701717069999997" blue="0.22296334670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zh8-vG-eJB">
+                                                <rect key="frame" x="30" y="235.33333333333331" width="314" height="205.33333333333331"/>
+                                                <color key="backgroundColor" red="0.368244346" green="0.28334906570000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-9I-i1L">
+                                                <rect key="frame" x="30" y="440.66666666666669" width="314" height="205.33333333333331"/>
+                                                <color key="backgroundColor" red="1" green="0.030205540069999998" blue="0.046732593179999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.48494160739999997" blue="0.97931163499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Zh8-vG-eJB" secondAttribute="trailing" id="2rh-Wv-c6d"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="rPc-9I-i1L" secondAttribute="bottom" id="7Un-0P-VaB"/>
+                                            <constraint firstItem="h9T-wU-tty" firstAttribute="top" secondItem="oQN-7V-sIF" secondAttribute="topMargin" id="7vd-w7-0m5"/>
+                                            <constraint firstItem="rPc-9I-i1L" firstAttribute="leading" secondItem="oQN-7V-sIF" secondAttribute="leadingMargin" id="Bce-oL-qeW"/>
+                                            <constraint firstItem="Zh8-vG-eJB" firstAttribute="top" secondItem="h9T-wU-tty" secondAttribute="bottom" id="DSH-yj-ZCw"/>
+                                            <constraint firstItem="rPc-9I-i1L" firstAttribute="top" secondItem="Zh8-vG-eJB" secondAttribute="bottom" id="FRh-Kn-Ogi"/>
+                                            <constraint firstItem="h9T-wU-tty" firstAttribute="leading" secondItem="oQN-7V-sIF" secondAttribute="leadingMargin" id="Hd0-0v-6UI"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="h9T-wU-tty" secondAttribute="trailing" id="WF7-ja-5T5"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="rPc-9I-i1L" secondAttribute="trailing" id="Yef-I2-l8B"/>
+                                            <constraint firstItem="h9T-wU-tty" firstAttribute="height" secondItem="Zh8-vG-eJB" secondAttribute="height" id="Yil-m8-NUh"/>
+                                            <constraint firstItem="Zh8-vG-eJB" firstAttribute="leading" secondItem="oQN-7V-sIF" secondAttribute="leadingMargin" id="bam-ho-G4R"/>
+                                            <constraint firstItem="Zh8-vG-eJB" firstAttribute="height" secondItem="rPc-9I-i1L" secondAttribute="height" id="jfN-P5-Ejx"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="30" left="30" bottom="30" right="30"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.030205540069999998" blue="0.046732593179999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="oQN-7V-sIF" firstAttribute="top" secondItem="QHO-h7-4R8" secondAttribute="topMargin" id="ATc-xd-0CS"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="oQN-7V-sIF" secondAttribute="trailing" id="hL3-cv-dqQ"/>
+                                    <constraint firstItem="oQN-7V-sIF" firstAttribute="leading" secondItem="QHO-h7-4R8" secondAttribute="leadingMargin" id="uAm-ej-L0o"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="oQN-7V-sIF" secondAttribute="bottom" id="w6f-Dk-8yB"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QHO-h7-4R8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2c2-OB-fRD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QHO-h7-4R8" secondAttribute="bottom" id="346-tg-qgb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QHO-h7-4R8" secondAttribute="trailing" id="DzD-Ii-hBX"/>
+                            <constraint firstItem="QHO-h7-4R8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lt6-we-IMN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="uq9-bm-lGt">
+                    <rect key="frame" x="0.0" y="0.0" width="345" height="183.33333333333334"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Margin은 고정값처럼 사용하는거임.  한개의 오브젝트가 있으면, 마진값은 그 오브젝트의 '안쪽'에다가 적용됨. 밑에 예시에서는 빨간색 View를 클릭하고 마진을 적용해야 핑크색 뷰의 마진크기가 줄어듦. 핑크색 View의 마진크기를 조절해봤자 변경되는게 없음.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Margin을 사용하려면 상위View에 마진값을 주어야, 그 하위 View에 마진이 적용됨!" textAlignment="natural" id="gV3-we-dBF">
+                    <rect key="frame" x="0.0" y="0.0" width="339.66666666666669" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </objects>
+        </scene>
+    </scenes>
+</document>

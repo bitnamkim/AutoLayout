@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FiC-iN-bJ9">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Multiplier_03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBG_Sun.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ub3-De-ywt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40 °" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae4-lQ-oAp">
+                                <rect key="frame" x="190.66666666666666" y="247" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ub3-De-ywt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0oP-pM-emy"/>
+                            <constraint firstAttribute="bottom" secondItem="Ub3-De-ywt" secondAttribute="bottom" id="Lcc-5F-toX"/>
+                            <constraint firstItem="Ub3-De-ywt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QsV-kr-3MW"/>
+                            <constraint firstItem="Ae4-lQ-oAp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jSx-YK-bGC"/>
+                            <constraint firstAttribute="trailing" secondItem="Ub3-De-ywt" secondAttribute="trailing" id="njy-sx-BOR"/>
+                            <constraint firstItem="Ae4-lQ-oAp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.7" id="tLA-ui-ZTj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SIA-Sh-C4h"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1gi-Vn-3v3">
+            <objects>
+                <viewController id="zMZ-jA-ySC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8qE-ME-i4B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBG_Sun.png" translatesAutoresizingMaskIntoConstraints="NO" id="R8x-mF-ROZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40도" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mi5-0b-9wm">
+                                <rect key="frame" x="157" y="207.66666666666663" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2kB-u2-V7Q"/>
+                                    <constraint firstAttribute="width" constant="100" id="78U-iO-aww"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="IRO-gJ-UCh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Ugs-yV-iZk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R8x-mF-ROZ" firstAttribute="top" secondItem="8qE-ME-i4B" secondAttribute="top" id="1SN-3g-f1I"/>
+                            <constraint firstItem="R8x-mF-ROZ" firstAttribute="leading" secondItem="8qE-ME-i4B" secondAttribute="leading" id="Ora-sl-Nr4"/>
+                            <constraint firstItem="mi5-0b-9wm" firstAttribute="centerY" secondItem="8qE-ME-i4B" secondAttribute="centerY" multiplier="0.7" id="RTX-7B-lct"/>
+                            <constraint firstAttribute="trailing" secondItem="R8x-mF-ROZ" secondAttribute="trailing" id="bOD-ac-sUO"/>
+                            <constraint firstAttribute="bottom" secondItem="R8x-mF-ROZ" secondAttribute="bottom" id="q1n-TE-9ay"/>
+                            <constraint firstItem="mi5-0b-9wm" firstAttribute="centerX" secondItem="8qE-ME-i4B" secondAttribute="centerX" id="x3D-Of-m0r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k42-4n-Umd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DYB-Qh-yuX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314" y="118"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gkx-7X-n0S">
+            <objects>
+                <viewController id="FiC-iN-bJ9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="peY-nZ-cTo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBG_Moon.png" translatesAutoresizingMaskIntoConstraints="NO" id="MuV-Kh-Zzj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNf-6t-ARW">
+                                <rect key="frame" x="181" y="273.33333333333331" width="52" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hNf-6t-ARW" firstAttribute="centerX" secondItem="peY-nZ-cTo" secondAttribute="centerX" id="2EI-tj-xEA"/>
+                            <constraint firstItem="hNf-6t-ARW" firstAttribute="centerY" secondItem="peY-nZ-cTo" secondAttribute="centerY" multiplier="0.8" id="Lbx-r6-anm"/>
+                            <constraint firstAttribute="trailing" secondItem="MuV-Kh-Zzj" secondAttribute="trailing" id="Qp6-U1-Ozr"/>
+                            <constraint firstAttribute="bottom" secondItem="MuV-Kh-Zzj" secondAttribute="bottom" id="Rho-oF-qEC"/>
+                            <constraint firstItem="MuV-Kh-Zzj" firstAttribute="top" secondItem="peY-nZ-cTo" secondAttribute="top" id="p7n-TP-fpP"/>
+                            <constraint firstItem="MuV-Kh-Zzj" firstAttribute="leading" secondItem="peY-nZ-cTo" secondAttribute="leading" id="y2t-Rd-vIV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RZo-NW-ojD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aa-gB-Bw2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="Ce0-lG-v6r">
+                    <rect key="frame" x="0.0" y="0.0" width="448" height="159.33333333333334"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">*화면에 이미지 꽉차게 하는 법*                                                -&gt; Constraint를 전부 0으로 설정한 다음, 이미지 클릭후 Constraint 옵션 더블 클릭. 클릭하면 내부로 들어가지는데 Safe Area 부분을 Superview로 바꿔주면 됨. 위, 아래, 좌, 우 전부 다 설정해줘야 하므로 Leading, Trailing, Top, Bottom 일일이 들어가서 설정 해줘야함.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="tBs-El-iUf">
+                    <rect key="frame" x="0.0" y="0.0" width="448" height="159.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">*Multiplier로 Label 위치 고정시키기*                                                -&gt; 이미지에 있는 달모양 위에 Label을 위치시키고 싶을 때, Constant 값을 주어서 위치 값을 주면 안됨. 디바이스 크기에 따라 위치가 조금씩 변하기 때문에! Multiplier로 값을 주어서 위치를 설정해줘야함. Multiplier로 값을 주면 위치가 일정함. 개꿀임.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </objects>
+            <point key="canvasLocation" x="1970" y="38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WeatherBG_Moon.png" width="750" height="1334"/>
+        <image name="WeatherBG_Sun.png" width="750" height="1334"/>
+    </resources>
+</document>

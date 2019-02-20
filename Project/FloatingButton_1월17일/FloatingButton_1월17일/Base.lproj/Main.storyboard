@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FloatingButton_1___17___" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="night_sky.png" translatesAutoresizingMaskIntoConstraints="NO" id="dR5-se-SUL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ga1-Vr-j8t" userLabel="Main Button">
+                                <rect key="frame" x="20" y="64" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="jjf-eM-Nq5"/>
+                                    <constraint firstAttribute="width" constant="60" id="xim-2Q-XQz"/>
+                                </constraints>
+                                <state key="normal" image="icon_play.png"/>
+                                <connections>
+                                    <segue destination="b1f-id-G67" kind="show" identifier="showDetails" animates="NO" id="5WT-y5-GIv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dR5-se-SUL" secondAttribute="bottom" id="BbA-jG-KDE"/>
+                            <constraint firstItem="ga1-Vr-j8t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Lte-ep-RsD"/>
+                            <constraint firstItem="dR5-se-SUL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bFr-Xt-Na0"/>
+                            <constraint firstItem="dR5-se-SUL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eZx-hq-CdL"/>
+                            <constraint firstItem="ga1-Vr-j8t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gyM-Wf-UuS"/>
+                            <constraint firstAttribute="trailing" secondItem="dR5-se-SUL" secondAttribute="trailing" id="o5W-Rc-NAh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242" y="123"/>
+        </scene>
+        <!--Floating Button View Controller-->
+        <scene sceneID="ik5-OS-6pv">
+            <objects>
+                <viewController id="b1f-id-G67" customClass="FloatingButtonViewController" customModule="FloatingButton_1___17___" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ctr-IQ-ykQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBL-yl-z78" userLabel="Main Button">
+                                <rect key="frame" x="20" y="64" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7PS-07-uwl"/>
+                                    <constraint firstAttribute="width" constant="60" id="rXS-b8-T9j"/>
+                                </constraints>
+                                <state key="normal" image="icon_play.png"/>
+                                <connections>
+                                    <action selector="dissmissFloatingButtonAction:" destination="b1f-id-G67" eventType="touchUpInside" id="4hB-Hf-fjc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qr1-lX-INb" userLabel="Soda Button">
+                                <rect key="frame" x="110" y="74" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="hej-0K-4Oz"/>
+                                    <constraint firstAttribute="height" constant="40" id="oZR-nn-cQm"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="food1.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae9-E5-HZ2" userLabel="Coffee Button">
+                                <rect key="frame" x="190" y="74" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="55E-1F-Iax"/>
+                                    <constraint firstAttribute="width" constant="40" id="Kxn-WU-5nU"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="food2.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8t-5k-dsj" userLabel="Icecream Button">
+                                <rect key="frame" x="270" y="74" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2Oh-gw-dxB"/>
+                                    <constraint firstAttribute="width" constant="40" id="moG-uE-BgE"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="food5.png"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="J8t-5k-dsj" firstAttribute="centerX" secondItem="SBL-yl-z78" secondAttribute="centerX" constant="240" id="4d4-zD-bPF"/>
+                            <constraint firstItem="ae9-E5-HZ2" firstAttribute="centerY" secondItem="SBL-yl-z78" secondAttribute="centerY" id="6ZC-oN-ej4"/>
+                            <constraint firstItem="J8t-5k-dsj" firstAttribute="centerY" secondItem="SBL-yl-z78" secondAttribute="centerY" id="HlR-8i-kji"/>
+                            <constraint firstItem="qr1-lX-INb" firstAttribute="centerY" secondItem="SBL-yl-z78" secondAttribute="centerY" id="J1t-8c-Rxm"/>
+                            <constraint firstItem="ae9-E5-HZ2" firstAttribute="centerX" secondItem="SBL-yl-z78" secondAttribute="centerX" constant="160" id="WYz-0i-0lw"/>
+                            <constraint firstItem="SBL-yl-z78" firstAttribute="leading" secondItem="eex-dI-GMh" secondAttribute="leading" constant="20" id="acf-Cq-AXH"/>
+                            <constraint firstItem="qr1-lX-INb" firstAttribute="centerX" secondItem="SBL-yl-z78" secondAttribute="centerX" constant="80" id="bhG-Rq-Knp"/>
+                            <constraint firstItem="SBL-yl-z78" firstAttribute="top" secondItem="eex-dI-GMh" secondAttribute="top" constant="20" id="dU7-l7-hGA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eex-dI-GMh"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1CenterX" destination="bhG-Rq-Knp" id="vrd-Ph-p09"/>
+                        <outlet property="button2CenterX" destination="WYz-0i-0lw" id="Fmv-VN-jER"/>
+                        <outlet property="button3CenterX" destination="4d4-zD-bPF" id="lPX-fV-EAm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GTB-RS-rpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095.2" y="122.66009852216749"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="food1.png" width="256" height="256"/>
+        <image name="food2.png" width="256" height="256"/>
+        <image name="food5.png" width="256" height="256"/>
+        <image name="icon_play.png" width="66" height="66"/>
+        <image name="night_sky.png" width="1242" height="2208"/>
+    </resources>
+</document>

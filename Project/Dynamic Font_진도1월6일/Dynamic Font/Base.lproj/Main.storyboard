@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dynamic_Font" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjb-QZ-uQr">
+                                <rect key="frame" x="20" y="40.5" width="280" height="399"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cert_BG.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="DPO-P6-dQD">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="399"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공인인증서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="fga-bm-89z">
+                                        <rect key="frame" x="91" y="0.0" width="98" height="139.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길순" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="uta-cT-V49">
+                                        <rect key="frame" x="103.5" y="0.0" width="73" height="271.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="발급자 : 홍길동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="0io-6d-Bb7">
+                                        <rect key="frame" x="63" y="0.0" width="154" height="359"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종 류    : 은행" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="f9V-jd-ETy">
+                                        <rect key="frame" x="63" y="0.0" width="154" height="407"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만료일 : 2019. 12. 31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QmR-Rz-Dp4">
+                                        <rect key="frame" x="63" y="0.0" width="154" height="459"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="uta-cT-V49" firstAttribute="top" secondItem="DPO-P6-dQD" secondAttribute="top" id="3yJ-L0-688"/>
+                                    <constraint firstItem="fga-bm-89z" firstAttribute="centerX" secondItem="DPO-P6-dQD" secondAttribute="centerX" id="9u8-5s-iSC"/>
+                                    <constraint firstItem="QmR-Rz-Dp4" firstAttribute="bottom" secondItem="DPO-P6-dQD" secondAttribute="bottom" multiplier="1.15" id="CAa-xZ-3z7"/>
+                                    <constraint firstItem="DPO-P6-dQD" firstAttribute="top" secondItem="vjb-QZ-uQr" secondAttribute="top" id="LKu-f1-o6g"/>
+                                    <constraint firstItem="fga-bm-89z" firstAttribute="top" secondItem="DPO-P6-dQD" secondAttribute="top" id="LLC-rC-mXw"/>
+                                    <constraint firstAttribute="width" secondItem="vjb-QZ-uQr" secondAttribute="height" multiplier="1009:1438" id="LN2-jm-a37"/>
+                                    <constraint firstItem="0io-6d-Bb7" firstAttribute="width" secondItem="DPO-P6-dQD" secondAttribute="width" multiplier="0.55" id="OIh-EM-gSA"/>
+                                    <constraint firstItem="0io-6d-Bb7" firstAttribute="bottom" secondItem="DPO-P6-dQD" secondAttribute="bottom" multiplier="0.9" id="Uen-4r-BJb"/>
+                                    <constraint firstItem="uta-cT-V49" firstAttribute="centerX" secondItem="DPO-P6-dQD" secondAttribute="centerX" id="Uss-ht-BqH"/>
+                                    <constraint firstItem="fga-bm-89z" firstAttribute="width" secondItem="DPO-P6-dQD" secondAttribute="width" multiplier="0.35" id="Zwv-Yh-twq"/>
+                                    <constraint firstAttribute="trailing" secondItem="DPO-P6-dQD" secondAttribute="trailing" id="anB-fT-fOX"/>
+                                    <constraint firstItem="QmR-Rz-Dp4" firstAttribute="leading" secondItem="f9V-jd-ETy" secondAttribute="leading" id="e1b-bE-K8e"/>
+                                    <constraint firstItem="QmR-Rz-Dp4" firstAttribute="top" secondItem="DPO-P6-dQD" secondAttribute="top" id="fvK-gb-CZv"/>
+                                    <constraint firstAttribute="bottom" secondItem="DPO-P6-dQD" secondAttribute="bottom" id="htJ-4i-0PT"/>
+                                    <constraint firstItem="fga-bm-89z" firstAttribute="bottom" secondItem="DPO-P6-dQD" secondAttribute="bottom" multiplier="0.35" id="jj8-Yd-pww"/>
+                                    <constraint firstItem="0io-6d-Bb7" firstAttribute="centerX" secondItem="DPO-P6-dQD" secondAttribute="centerX" id="l6b-ne-UBh"/>
+                                    <constraint firstItem="f9V-jd-ETy" firstAttribute="leading" secondItem="0io-6d-Bb7" secondAttribute="leading" id="q7U-WI-P1q"/>
+                                    <constraint firstItem="f9V-jd-ETy" firstAttribute="centerX" secondItem="DPO-P6-dQD" secondAttribute="centerX" id="qqR-xk-PmH"/>
+                                    <constraint firstItem="f9V-jd-ETy" firstAttribute="top" secondItem="DPO-P6-dQD" secondAttribute="top" id="rY6-38-bcD"/>
+                                    <constraint firstItem="QmR-Rz-Dp4" firstAttribute="centerX" secondItem="DPO-P6-dQD" secondAttribute="centerX" id="sCR-kM-CDM"/>
+                                    <constraint firstItem="0io-6d-Bb7" firstAttribute="top" secondItem="DPO-P6-dQD" secondAttribute="top" id="sdA-yA-1GD"/>
+                                    <constraint firstItem="uta-cT-V49" firstAttribute="width" secondItem="DPO-P6-dQD" secondAttribute="width" multiplier="0.26" id="tYy-v1-xHO"/>
+                                    <constraint firstItem="DPO-P6-dQD" firstAttribute="leading" secondItem="vjb-QZ-uQr" secondAttribute="leading" id="wf2-Ss-7rA"/>
+                                    <constraint firstItem="uta-cT-V49" firstAttribute="bottom" secondItem="DPO-P6-dQD" secondAttribute="bottom" multiplier="0.68" id="xr2-2h-CyW"/>
+                                    <constraint firstItem="f9V-jd-ETy" firstAttribute="bottom" secondItem="DPO-P6-dQD" secondAttribute="bottom" multiplier="1.02" id="zvD-iT-WB2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vjb-QZ-uQr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DkO-BM-Zos"/>
+                            <constraint firstItem="vjb-QZ-uQr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EJF-3c-ED1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vjb-QZ-uQr" secondAttribute="trailing" constant="20" id="avu-MK-fFl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="Ltw-hZ-pKX">
+                    <rect key="frame" x="0.0" y="0.0" width="459" height="216.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <mutableString key="text">Image View - Content Mode 옵션 설명                     🐷Scale to Fit : 원래 이미지 사이즈 그대로 표시해주는거.     🐷Aspect Fit : Constraint 조건에 맞게 이미지 사이즈 표시해주는거. 해당하는 View 사이즈에 맞게 설정됨.                                                                                         🐷Aspect Fill : 이미지 왜곡되지 않게 비율에 맞게 표시해주는거. 근데 비율을 유지하다 보니까 이미지 크기가 View에 안 맞는 경우도 있음.                                                                      </mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="해당하는 이미지의 크기에 맞게 Aspect Ratio 해줘서 Dimension이랑 Multiplier랑 비율 똑같이 해주면 이미지 사이즈 줄어듦." textAlignment="natural" id="U06-nT-fKE">
+                    <rect key="frame" x="0.0" y="0.0" width="459" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="Njv-nt-Jc0">
+                    <rect key="frame" x="0.0" y="0.0" width="440" height="392"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <mutableString key="text">1. Auto Shrink 해서 최소 폰트 사이즈 설정 해주기. 2. 공인인증서 Label 위치 설정은, 이미지랑 Label 같이 클릭한다음 Top Edges, Bottom Edges, Horizontal Centers 해주기. 3. 그 다음, Bottom Edges 눌러서 Multiplier 값 설정해서 Label 위치 설정하기. 4. 공인인증서 Label이랑 이미지랑 Equal Width 해주기(이거 해줘야 폰트가 Auto Shrink 됨).  5. Width Edit 눌러서 Multiplier 가운데 위치오게 조정하기.</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="23.64130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cert_BG.PNG" width="1009" height="1438"/>
+    </resources>
+</document>
