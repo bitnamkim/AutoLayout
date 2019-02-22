@@ -8,6 +8,19 @@
 ##
 
 
-![01](https://user-images.githubusercontent.com/47823405/53137194-1fcf0080-35c5-11e9-988c-a1f3367adfb9.gif) ![02](https://user-images.githubusercontent.com/47823405/53137207-2eb5b300-35c5-11e9-9fc0-7708fc7ac8db.gif) ![03](https://user-images.githubusercontent.com/47823405/53137217-3b3a0b80-35c5-11e9-8b9f-29833de2ff04.gif)
+# 2. 프로젝트 시현 이미지
+<table>
+  <tr>
+    <th width="30%">버튼으로 차트식 표현</th> <th width="30%">로그인 뷰</th> <th width="30%">클릭하면 기능이 확장되는 버튼</th>
+  </tr>
+  
+  <tr>
+    <th rowspan="9"><img src="https://user-images.githubusercontent.com/47823405/53147192-202dc280-35ea-11e9-97c1-9c8066f2de68.gif"></th>
+    <th rowspan="9"><img src="https://user-images.githubusercontent.com/47823405/53147193-215eef80-35ea-11e9-960f-f83b44bccc2c.gif"></th>
+    <th rowspan="9"><img src="https://user-images.githubusercontent.com/47823405/53169964-2b044980-3622-11e9-9e86-552334522e67.gif"></th>
+     </tr>
+<table>
+  
 
+# 감사합니다!
 	
