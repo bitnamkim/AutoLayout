@@ -11,13 +11,13 @@
 # 2. 프로젝트 시현 이미지
 <table>
   <tr>
-    <th width="30%">버튼으로 차트식 표현</th> <th width="30%">로그인 뷰</th> <th width="30%">클릭하면 기능이 확장되는 버튼</th>
+    <th width="30%">버튼으로 차트식 표현하기</th> <th width="30%">클릭하면 셀크기 확장시키기</th> <th width="30%">클릭하면 기능이 확장되는 버튼(Floating Button)</th>
   </tr>
   
   <tr>
-    <th rowspan="9"><img src="https://user-images.githubusercontent.com/47823405/53147192-202dc280-35ea-11e9-97c1-9c8066f2de68.gif"></th>
-    <th rowspan="9"><img src="https://user-images.githubusercontent.com/47823405/53147193-215eef80-35ea-11e9-960f-f83b44bccc2c.gif"></th>
-    <th rowspan="9"><img src="https://user-images.githubusercontent.com/47823405/53169964-2b044980-3622-11e9-9e86-552334522e67.gif"></th>
+    <th rowspan="9"><img src="https://user-images.githubusercontent.com/47823405/53236364-6f055600-36d7-11e9-8cfb-37d397f4ad42.gif"></th>
+    <th rowspan="9"><img src="https://user-images.githubusercontent.com/47823405/53236367-7167b000-36d7-11e9-9857-e42effa3844e.gif"></th>
+    <th rowspan="9"><img src="https://user-images.githubusercontent.com/47823405/53236368-7298dd00-36d7-11e9-8e5e-4645b288ab9f.gif"></th>
      </tr>
 <table>
   
