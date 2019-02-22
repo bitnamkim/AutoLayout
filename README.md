@@ -11,7 +11,8 @@
 # 2. 프로젝트 시현 이미지
 <table>
   <tr>
-    <th width="30%">버튼으로 차트식 표현하기</th> <th width="30%">클릭하면 셀크기 확장시키기</th> <th width="30%">클릭하면 기능이 확장되는 버튼(Floating Button)</th>
+    <th width="30%">버튼으로 차트식 표현하기</th> <th width="30%">클릭하면 셀크기 확장시키기</th> <th width="30%">클릭하면 기능이 확장되는 버튼
+	  (Floating Button)</th>
   </tr>
   
   <tr>
